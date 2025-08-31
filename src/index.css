@@ -1,0 +1,74 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+}
+
+:root {
+  --navy: #0a192f;
+  --coral: #ff6f61;
+  --mint: #64ffda;
+  --text-color: #e6f1ff;
+  --bg-gradient: linear-gradient(135deg, #0a192f, #172a45);
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+button.cta {
+  background: var(--coral);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button.cta:hover {
+  background: var(--mint);
+  color: var(--navy);
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+}
+
+.hero-overlay p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
