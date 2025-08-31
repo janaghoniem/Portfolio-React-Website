@@ -1,20 +1,19 @@
-import React, { useEffect } from 'react';
-import Avatar3D from './AvatarViewer';
-import './Hero.css';
+import { useEffect } from 'react';
+import AvatarViewer from './AvatarViewer';
 
-export default function Hero({ setAnim }) {
+export default function Hero() {
   useEffect(() => {
-    setAnim('wave'); // wave on load
-  }, [setAnim]);
+    // Could trigger initial animation here if needed
+  }, []);
 
   return (
     <section id="hero" className="hero-section">
       <div className="canvas-container">
-        <Avatar3D />
+        <AvatarViewer />
       </div>
       <div className="hero-overlay">
         <h1>Hi, I'm Jana</h1>
-        <p>Creative Technologist & Full‑Stack Engineer</p>
+        <p>Creative Technologist & Full-Stack Engineer</p>
         <div>
           <button className="cta" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>
             View Projects
@@ -27,3 +26,4 @@ export default function Hero({ setAnim }) {
     </section>
   );
 }
+

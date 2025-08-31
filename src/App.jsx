@@ -1,8 +1,9 @@
 import Header from './components/Header';
-import AvatarViewer from './components/AvatarViewer';
+import Hero from './components/Hero';
 import About from './components/About';
-// import Projects from './components/Projects';
-// import Footer from './components/Footer';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 import './index.css';
 
 export default function App() {
@@ -10,11 +11,12 @@ export default function App() {
     <>
       <Header />
       <main>
-        <AvatarViewer />
+        <Hero />
         <About />
-        {/* <Projects /> */}
+        <Projects />
+        <Skills />
+        <Contact />
       </main>
-      {/* <Footer /> */}
     </>
   );
 }
